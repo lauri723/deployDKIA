@@ -1,0 +1,324 @@
+#navbar .navbar-toggler {
+    outline-color: #4B0082;
+}
+
+#navbar .nav-link {
+    color: 	#D4AF37;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-right: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+#navbar .nav-link:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+#right {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#navbar #right .nav-link {
+    font-size: 1em;
+}
+
+#navbar #right .nav-link:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+#show {
+    margin: 50px auto 80px auto;
+} 
+
+.p_span {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.4em;
+    line-height: 1em;
+    color: #4B0082;
+}
+
+.ref_cards {
+    width: 75%;
+    max-width: 900px;
+}
+
+.card {
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.c_span {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #4B0082;
+}
+
+.card_btn {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #D4AF37;
+    border: none;
+    border-radius: 8px;
+}
+
+.card_btn:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#p_i_blog {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #4B0082;
+    margin-top: 100px;
+}
+
+#b_btn {
+    font-size: 1.2em;
+    line-height: .8em;
+}
+
+#footer {
+    border-top: 25px solid #4B0082;
+    border-bottom: 25px solid #4B0082;
+    margin-top: 100px;
+}
+
+#footer, .footer {
+    color: #D4AF37;
+    background-color: #4B0082;
+    
+}
+
+.footer:hover {
+    color: #D4AF37;
+} 
+
+.footer_show {
+    font-size: 1.3em;
+}
+
+.footer_contact {
+    font-size: 1.1;
+    line-height: 3em;
+}
+
+#lovely {
+    color: red;
+}
+
+#blog_embed {
+    width: 100%;
+    height: auto;
+}
+
+
+#b_title {
+    font-size: 2.4em;
+    margin: 100px auto;
+}
+
+.b_home {
+    width: 80%;
+    max-width: 800px;
+}
+
+.b_list {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.item_title {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    font-size: 2.0em;
+    color: red;
+}
+
+.item_img img {
+    border-radius: 5px;
+}
+
+.item_more .card_btn {
+    font-size: 1.2em;
+}  
+ 
+.b_show {
+    margin-top: 30px;
+    width: 80%;
+    max-width: 800px;
+}
+
+#add_comment {
+    margin-bottom: 50px;
+}
+
+.new_blog, .edit_blog {
+    margin: 100px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.new_title {
+    font-size: 2.2em;
+}
+
+.new_blog_group {
+    width: 50%; 
+    margin: 25px auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+.blog_body {
+    color: #343a40;
+}
+
+.new_blog_group {
+    color: red;
+    margin-top: 50px;
+}
+
+.new_form {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.new_form:focus {
+    box-shadow: none;
+    border-color: #4B0082;
+    border-radius: 8px;
+    border-width: 3px;
+ }
+
+.new_buttons {
+    font-size: 1.2em;
+    margin: auto;
+    display: flex;
+    align-items: inline;
+}
+
+.show_buttons {
+    font-size: 1.2em;
+    margin: auto;   
+    display: flex;
+    align-items: inline;
+}
+
+.cb_rev {
+    color: red;
+} 
+
+.cb_rev:hover {
+    background-color: red;
+    color: #D4AF37; 
+} 
+
+.badge_index {
+    padding: auto;
+}
+
+.comments {
+    font-size: .7em;
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+.comment_author {
+    color: red;
+}
+
+.comment_text {
+    font-size: 1.1em;
+    padding: 20px 20px 10px 20px;
+    margin-block-end: 0px;
+}
+
+.comments .new_buttons {
+    font-size: 1em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  
+}
+
+.comment_buttons {
+    font-size: 1em;
+    margin: auto;
+    align-items: center;
+}
+
+.diamond {
+    color: #4B0082;
+}
+
+.btn-link {
+    font-size: .9em;
+    margin: 0px;
+    display: flex-center;
+}
+
+.btn-link:hover {
+    color: #4B0082;
+}
+
+.com {
+    padding: 0px;
+}
+
+#body_para {
+    white-space: pre-wrap;
+}
+
+.edit_blog h1 {
+    display: flex-center;
+}
+
+.edit_comment .edit_title {
+    display: flex-center;
+}
+
+.date {
+    font-weight: light;
+    color: #6c757d;
+}
+
+.span_show {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #4B0082;
+}

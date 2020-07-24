@@ -1,0 +1,407 @@
+#text_header {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar .navbar-toggler {
+    outline-color: #4B0082;
+}
+
+#navbar .nav-link {
+    color: 	#D4AF37;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-right: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+#navbar .nav-link:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+#show {
+    margin: 50px auto 80px auto;
+} 
+
+h4 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.6em;
+    color: red;
+}
+
+.embed {
+    background-color: #4B0082;
+    padding: 20px 20px 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 48px;
+}
+
+.blurbs {
+    font-size: 1.4em;
+    padding-left: 50px;
+}
+
+#podcast {
+    margin-top: 25px;
+    margin-bottom: 48px;
+} 
+
+.p_span {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.4em;
+    line-height: 1em;
+    color: #4B0082;
+}
+
+.card {
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.c_span {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #4B0082;
+}
+
+.card_btn {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #D4AF37;
+    border: none;
+    border-radius: 8px;
+}
+
+.card_btn:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+#p_i_blog {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #4B0082;
+    margin-top: 100px;
+}
+
+#b_btn {
+    font-size: 1.2em;
+    line-height: .8em;
+}
+
+#blog_blurb {
+    font-size: 1.2em;
+}
+
+#img_i_blog img {
+    /* padding: 20px; */
+    border: 5px solid red;
+    border-radius: 15px;
+}
+
+.contact {
+    font-size: 1.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact_span {
+    color: red;
+}
+
+#footer {
+    border-top: 25px solid #4B0082;
+    border-bottom: 15px solid #4B0082;
+    margin-top: 100px;
+}
+
+#footer, .footer {
+    color: #D4AF37;
+    background-color: #4B0082;
+    font-size: .9em;
+}
+
+.footer:hover {
+    color: #D4AF37;
+} 
+
+.footer_show {
+    font-size: 1.3em;
+}
+
+.footer_contact {
+    font-size: 1.1;
+    line-height: 3em;
+}
+
+
+#lovely {
+    color: red;
+}
+
+#blog_embed {
+    width: 100%;
+    height: auto;
+}
+
+
+#b_title {
+    font-size: 2.4em;
+    margin: 100px auto;
+}
+
+.b_home {
+    width: 80%;
+    max-width: 800px;
+}
+
+.b_list {
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.item_title {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bold;
+    font-size: 2.0em;
+    color: red;
+}
+
+.item_img img {
+    border-radius: 5px;
+}
+
+.item_more .card_btn {
+    font-size: 1.2em;
+}  
+ 
+.b_show {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.new_blog, .edit_blog {
+    margin: 100px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.new_title {
+    font-size: 2.2em;
+}
+
+.new_blog_group {
+    width: 50%; 
+    margin: 25px auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+.new_blog_group {
+    color: red;
+    margin-top: 50px;
+}
+
+.new_form {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.new_form:focus {
+    box-shadow: none;
+    border-color: #4B0082;
+    border-radius: 8px;
+    border-width: 3px;
+ }
+
+.new_buttons {
+    font-size: 1.2em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.cb_rev {
+    color: red;
+} 
+
+.cb_rev:hover {
+    background-color: red;
+    color: #D4AF37; 
+} 
+
+.info h1 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    color: #4B0082;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.info_image {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+#please_login{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.login_title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.login_reg {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #D4AF37;
+    border: none;
+    border-radius: 8px;
+}
+
+.login_reg:hover {
+    background-color: #D4AF37;
+    color: red; 
+}
+
+#not {
+    margin-top: 30px;
+}
+
+#login_reg {
+    margin-bottom: 100px;
+}
+
+label {
+    color: red;
+}
+
+.btn_reg {
+    margin-bottom: 100px;
+}
+
+.login .form-group {
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.login_head {
+    background-color: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #4B0082;
+}
+
+#already {
+    margin-top: 100px;
+}
+
+#again {
+    margin-bottom: 30px;
+}
+
+.diam_info {
+    margin-top: 120px;
+}
+
+.info_title {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    font-size: 1.4em;
+    line-height: 1em;
+    color: #4B0082;
+}
+
+.info_text {
+    font-size: .9em;
+}
+
+.gem_info {
+    width: 90%;
+    max-width: 900px;
+}
+
+.card_gem {
+    width: 90%;
+    max-width: 16rem;
+}
+
+.stone {
+    color: red;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: bolder;
+    line-height: 1em;
+    color: #4B0082;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.jewel {
+    width: 80%;
+    max-width: 800px;
+}
+
+.jwlry {
+    color: red;
+    font-size: .8em;
+}
+
+.gia {
+    background-color: red;
+    border-top: 3px solid red;
+    margin: 35px auto;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

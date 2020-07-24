@@ -1,0 +1,60 @@
+<%- include("../partials/headerBlog") %>
+<%- include("../partials/scroll") %>
+<%- include("../partials/navbarBlog") %>
+
+<div class="container b_show">
+    <div class="b_items">
+        <ul class="list-group b_list text-center">
+            <li class="list-group-item item_title"><a><%= blog.title %></a></li>
+            <li class="list-group-item item_date float-left">
+                <div class="meta">
+                    <span class="date"><%= blog.created.toDateString() %></span>
+                </div>
+            </li>
+            <li class="list-group-item img-fluid item_img">
+                <img class="img-fluid mx-auto" src="<%= blog.image %>" width="325">
+            </li>
+            <li id="body_para" class="list-group-item item_body">
+                <p class="blog_body"><%= blog.body %></p>
+            </li>
+            <p>
+                <span class="span_show">Thanks for listening,  <%= blog.author.username %></span>  
+            </p>
+                
+            <% if(currentUser && currentUser.isAdmin){ %>
+                <a class="btn btn-outline-light btn-lg card_btn show_buttons" href="/blogs/<%= blog._id %>/edit">Edit Blog</a> 
+                <form method="POST" action="/blogs/<%=blog._id%>?_method=DELETE">
+                    <button class="btn btn-outline-light btn-lg card_btn cb_rev show_buttons" type="submit">Delete Blog</button>
+                </form>
+            <% }%>
+        </ul> 
+    </div>
+    <div class="container b_show">
+        <div>
+            <a id="add_comment" class="btn btn-outline-light btn-lg card_btn" href="/blogs/<%= blog._id %>/comments/new">Add New Comment</a>
+        </div>
+        <% blog.comments.forEach(function(comment){ %>
+            <div class="card">
+                <div class="card-body comments">
+                    <form class="form-inline">
+                        <p class="card-text comment_author">Comment by  <strong><%= comment.author.username %></strong><span class="date">  -  <%= moment(comment.createdAt).fromNow() %></span></p>
+                    </form>
+                    <p class="card-text comment_text"><%= comment.text %></p>
+                    <% if(currentUser && comment.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+                        <a class="btn btn-outline-light btn-lg card_btn comment_buttons float-left" 
+                            href="/blogs/<%=blog._id %>/comments/<%=comment._id %>/edit">Edit Comment</a>
+                        <form id="delete-form" action="/blogs/<%= blog._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-outline-light btn-lg card_btn cb_rev comment_buttons float-right" type="submit">Delete Comment</button>
+                        </form>        
+                    <% }%>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div> 
+
+
+<%- include("../partials/footer") %>
+
+
+
