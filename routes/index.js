@@ -39,24 +39,24 @@ router.post("/register", function(req, res){
 
 router.get("/adminRegister", function(req, res){
     res.render("adminRegister"); 
- });
+});
  
- //handle sign up logic
- router.post("/adminRegister", function(req, res){
-     var newUser = new User({username: req.body.username});
-     if(req.body.adminCode === process.env.ADMIN_CODE) {
-         newUser.isAdmin = true;
-             console.log("ADMIN");
-       }
-     User.register(newUser, req.body.password, function(err, user){
-         if(err){
-             return res.render("register");
-         }
-         passport.authenticate("local")(req, res, function(){
-            res.redirect("/blogs"); 
-         });
-     });
- });
+//handle sign up logic
+router.post("/adminRegister", function (req, res) {
+    var newUser = new User({ username: req.body.username });
+    // TODO should render error to the user if the code is invalid, rather than responding with success.
+    if (req.body.adminCode === process.env.ADMIN_CODE) {
+        newUser.isAdmin = true;
+    }
+    User.register(newUser, req.body.password, function (err, user) {
+        if (err) {
+            return res.render("register");
+        }
+        passport.authenticate("local")(req, res, function () {
+            res.redirect("/blogs");
+        });
+    });
+});
 
 //show login form
 router.get("/login", function(req, res){

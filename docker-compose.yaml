@@ -1,0 +1,19 @@
+version: '3.5'
+volumes:
+  mongodb: # this lets us save our mongo instance across reboots
+services:
+  redis:
+    image: "redis:3.2.8"
+    ports:
+    - "6379:6379"
+  mongo:
+    image: "mongo:4.2.8"
+    volumes:
+    - "mongodb:/data/db"
+    ports:
+    - "27017:27017"
+    networks:
+    - app
+networks:
+  app:
+    name: app

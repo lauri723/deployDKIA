@@ -17,12 +17,20 @@ var commentRoutes  = require("./routes/comments"),
     blogRoutes     = require("./routes/blogs"),
     indexRoutes    = require("./routes/index")
 
-mongoose.connect(process.env.DATABASEURL), {
+var { handleError } = require('./middleware');
+
+mongoose.connect(process.env.DATABASEURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true
-};
+}).catch(err => {
+    if (err) {
+        console.error("Failed to connect to mongodb.")
+        console.error(err.stack)
+        process.exit(1)
+    }
+});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
@@ -51,6 +59,7 @@ app.use((req, res, next) => {
 app.use("/", indexRoutes);
 app.use("/blogs", blogRoutes);
 app.use("/blogs/:id/comments", commentRoutes)
+app.use(handleError);
 
 
 var port = process.env.PORT || 3000;
